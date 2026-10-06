@@ -1,71 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Colors</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Zinzi Mhlebi | Responsive Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-    <h1 id="top">Colors!</h1>
+
+  <!-- Header Section with Logo -->
+  <header class="site-header">
+    <div class="container header-container">
+      <img src="logo.png" alt="Zinzi Mhlebi Logo" class="logo">
+    </div>
   </header>
 
-  <main>
-    <h2>Basic Media Queries</h2>
-    <p>In this assignment you will add two media queries to the css file.</p>
-    <ul>
-      <li>The first media query should trigger at 772px and change the layout of the divs to be 45% of the viewport width. The images should have a maximum height of 30% of the viewport height.</li>
+  <!-- Horizontal Navigation Menu (4 links including self-link) -->
+  <nav class="site-nav">
+    <div class="container">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#about">About Zinzi</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-      <li>The second media query should trigger at 998px and change the layout of the divs to be 30% of the viewport width.</li>
-    </ul>
-    <p>You will need to make additional changes to ensure that the divs appear next to each other and that the images are contained within the divs.  Some of these properties include display, width and max-height.</p>
+  <!-- Main Content Area -->
+  <main class="site-main container">
+    
+    <!-- Large Promotional Banner -->
+    <section class="hero-banner">
+      <div class="banner-content">
+        <h1>Hi, I'm Zinzi Mhlebi</h1>
+        <p>Software Developer & Data Specialist creating intelligent, responsive web applications.</p>
+        <a href="#projects" class="cta-button">Explore My Projects</a>
+      </div>
+    </section>
 
-    <div>
-      <img src="images/Red.jpeg" alt="Red" width="200">
-      <p class = "label">Red</p>
-    </div>
-    <div>
-      <img src="images/Orange.png" alt="Orange" width="200">
-      <p class = "label">Orange</p>
-    </div>
-    <div>
-      <img src="images/Yellow.png" alt="Yellow" width="200">
-      <p class = "label">Yellow</p>
-    </div>
-    <div>
-      <img src="images/Green.png" alt="Green" width="200">
-      <p class = "label">Green</p>
-    </div>
-    <div>
-      <img src="images/Blue.png" alt="Blue" width="200">
-      <p class = "label">Blue</p>
-    </div>
-    <div>
-      <img src="images/Indigo.jpeg" alt="Indigo" width="200">
-      <p class = "label">Indigo</p>
-    </div>
-    <div>
-      <img src="images/Purple.png" alt="Purple" width="200">
-      <p class = "label">Purple</p>
-    </div>
-    <div>
-      <img src="images/Pink.jpeg" alt="Pink" width="200">
-      <p class = "label">Pink</p>
-    </div>
-    <div>
-      <img src="images/White.png" alt="White" width="200">
-      <p class = "label">White</p>
-    </div>
-    </div>
+    <!-- Project Divs (Responsive Grid Container) -->
+    <section id="projects">
+      <div class="projects-container">
+        
+        <!-- Project 1: Hire Match -->
+        <div class="project-card">
+          <img src="hire-match.jpg" alt="Hire Match Project Interface">
+          <h3>1. Hire Match</h3>
+          <p>An intelligent recruitment platform connecting job seekers with ideal employers using automated skill-matching algorithms.</p>
+        </div>
+
+        <!-- Project 2: Sentiment Analysis -->
+        <div class="project-card">
+          <img src="sentiment-analysis.jpg" alt="Sentiment Analysis Visualization Dashboard">
+          <h3>2. Sentiment Analysis</h3>
+          <p>A natural language processing tool that analyzes customer feedback and social sentiment to extract actionable business insights.</p>
+        </div>
+
+        <!-- Project 3: Customer Churn Prediction -->
+        <div class="project-card">
+          <img src="churn-prediction.jpg" alt="Customer Churn Prediction Analytics">
+          <h3>3. Churn Prediction</h3>
+          <p>A predictive machine learning model that identifies at-risk subscribers and recommends proactive retention strategies.</p>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <a href="#top">Jump to the Top</a>
-  </footer>
-</body>
+  <!-- Footer split into two columns -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <!-- Footer Left Column: Small Logo -->
+      <div class="footer-left">
+        <img src="logo-small.png" alt="Zinzi Mhlebi Small Logo" class="footer-logo">
+      </div>
 
+      <!-- Footer Right Column: Copyright -->
+      <div class="footer-right">
+        <p>&copy; 2026 Zinzi Mhlebi. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
 </html>
+   
+    
